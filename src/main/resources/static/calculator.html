@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href ="/css/calculator.css">
+    <script src="/js/script.js" defer></script>
+</head>
+<body>
+    <div>
+        <h1>Grade Calculator</h1><br>
+        <main>
+            <h4 id = "activities">Activities</h4>
+            <p id = "give_grades">Give grades to the numeric activities:</p>
+            <table class = "table table-dark table-stripped" id = "Table">
+                <th>Name</th>
+                <th>ShortName</th>
+                <th>Weight</th>
+                <th>Grade</th>
+                <th>Percent</th>
+                <tr>
+                    <td>Activity 1</td>
+                    <td>A1</td>
+                    <td><input type ="text" class = "weights"/></td>
+                    <td><p><input type ="text" class = "numerator"/>/<input type ="text" class = "denominator" /></p></td>
+                    <td class = "percent" type = "text"></td>
+                </tr>
+                <tr>
+                    <td>Activity 2</td>
+                    <td>A2</td>
+                    <td><input type ="text" class = "weights"/></td>
+                    <td><p><input type ="text" class = "numerator"/>/<input type ="text" class = "denominator" /></p></td>
+                    <td class = "percent" type = "text" ></td>
+                </tr>
+
+            </table>
+            <section>
+            <input type = "button" id = "button_1" value = "ADD ROW" onclick = "add_a_row()"/>
+            <h5 id = "Result">Result</h5>
+        </section>
+        <input type = "button" id = "button_2" value = "WEIGHTED" onclick = "calc_weighted()"/>
+        <input type = "button" id = "button_3" value = "MEAN" onclick = "calc_mean()"/>
+        <h6 id = "result">result</h6>
+        </main>
+        </div>
+        
+</body>
+</html>
